@@ -1,0 +1,16 @@
+<launch>
+    <!-- 1.Load the URDF file on the parameter server -->
+    <param name="robot_description" command="$(find xacro)xacro $(find urdf01_rviz)/urdf/xacro/car.xacro"/>
+    <!-- 2.Start the rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf01_rviz)/config/show_mycar.rviz"/>
+    <!-- 3.Joint status publishes node -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"/>
+    <!-- 4.Robot status publication node -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+    <!-- 5.Integrated arbotix motion control node, and load paramter -->
+    <node pkg="arbotix_python" type="arbotix_driver" name="driver" output="screen">
+        <rosparam command="load" file="$(find urdf01_rviz)/config/control.yaml" />
+        <param name="sim" value="true" />
+    </node>
+
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+
+    <arg name="car_lenth" default="0.5"/>
+
+    <param name="A" value="$(arg car_lenth)"/>
+    <param name="B" value="$(arg car_lenth)"/>
+    <param name="C" value="$(arg car_lenth)"/>
+</launch>

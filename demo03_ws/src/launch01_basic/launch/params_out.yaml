@@ -1,0 +1,15 @@
+bg_B: 10
+bg_G: 20
+bg_R: 100
+my_turtle: {background_b: 255, background_g: 86, background_r: 69, bg_B: 10, bg_G: 20,
+  bg_R: 100, param_B: 3.14}
+param_A: 100
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_xdh_vm__38527: 'http://xdh-vm:38527/', host_xdh_vm__46305: 'http://xdh-vm:46305/'}
+rosversion: '1.14.13
+
+  '
+run_id: 7ea06572-3b20-11ed-9b73-000c2929f96b

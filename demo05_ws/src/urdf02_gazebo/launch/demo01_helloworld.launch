@@ -1,0 +1,9 @@
+<launch>
+    <!-- 1.Load the URDF file on the parameter server -->
+    <param name="robot_description" textfile="$(find urdf02_gazebo)/urdf/demo01_helloworld.urdf" />
+    <!-- 2.Start the Gazebo simulation environment -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    <!-- 3.Add a robot model to Gazebo -->
+
+
+</launch>

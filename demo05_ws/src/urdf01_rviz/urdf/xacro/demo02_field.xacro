@@ -1,0 +1,12 @@
+<robot name="mycar" xmlns:xacro="http://wiki.ros.org/xacro">
+    <!-- 1.property define -->
+    <xacro:property name="PI" value="3.141597" />
+    <xacro:property name="radius" value="0.03" />
+
+    <!-- 2.property call -->
+
+
+    <!-- 3.arithmetic operations -->
+
+
+</robot>

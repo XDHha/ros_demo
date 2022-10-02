@@ -1,0 +1,2 @@
+set(pluming_server_client_MESSAGE_FILES "")
+set(pluming_server_client_SERVICE_FILES "/home/xdh/demo03_ws/src/pluming_server_client/srv/AddInts.srv")
